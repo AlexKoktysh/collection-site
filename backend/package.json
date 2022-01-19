@@ -1,0 +1,28 @@
+{
+  "name": "collection-site",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Mr-Prezident-Sasha/collection-site.git"
+  },
+  "author": "Aliaksandr Koktysh <awot0058@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-Prezident-Sasha/collection-site/issues"
+  },
+  "homepage": "https://github.com/Mr-Prezident-Sasha/collection-site#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

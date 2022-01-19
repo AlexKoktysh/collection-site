@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-areas: 
+    'header header'
+    'navbar profile';
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 2vw;
+  .header {
+    grid-area: header;
+    padding: 20px;
+    background: gold;
+  }
+  .profile {
+    grid-area: profile;
+    padding: 20px;
+    background: red;
+  }
+  .app_wrapper_content {
+    grid-area: profile;
+    padding: 20px;
+    background: red;
+  }
+}
