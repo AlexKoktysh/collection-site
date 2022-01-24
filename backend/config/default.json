@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "DIPLO REal SASHA",
+    "mongoUri": "mongodb+srv://DIPLO_MAT14:HalaMadrid2018@cluster0.uhins.mongodb.net/app?retryWrites=true&w=majority"
+}

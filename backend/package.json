@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "frontend": "cd ../ && npm start --prefix frontend/",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,11 @@
   },
   "homepage": "https://github.com/Mr-Prezident-Sasha/collection-site#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
     "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.7"
   },
   "devDependencies": {
