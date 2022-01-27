@@ -2,10 +2,13 @@
   grid-area: n;
   background-color: blueviolet;
   padding: 20px;
+  font-size: 20px;
+  width: 400px;
 }
 
 .navbar {
-    grid-area:  navbar;
+    grid-area: navbar;
+
     padding: 20px;
     background: green;
     .item a {

@@ -1,0 +1,38 @@
+{
+  "name": "collection-site",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "frontend": "cd ../ && npm start --prefix frontend/",
+    "frontend:install": "cd ../ && npm install --prefix frontend/",
+    "frontend:build": "cd ../ && npm run build --prefix frontend/",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Mr-Prezident-Sasha/collection-site.git"
+  },
+  "author": "Aliaksandr Koktysh <awot0058@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-Prezident-Sasha/collection-site/issues"
+  },
+  "homepage": "https://github.com/Mr-Prezident-Sasha/collection-site#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.7",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
